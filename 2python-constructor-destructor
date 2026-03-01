@@ -1,0 +1,22 @@
+# Constructor Example
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        print(self.brand, self.model, "has been created")
+
+car1 = Car("Toyota", "Corolla")
+# Destructor Example
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        print(self.brand, self.model, "has been created")
+
+    def __del__(self):
+        print(self.brand, self.model, "is being destroyed")
+
+car1 = Car("Toyota", "Corolla")
+del car1
