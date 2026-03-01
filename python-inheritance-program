@@ -1,0 +1,36 @@
+# Single Level Inheritance
+
+class Parent:
+    def p_print(self):
+        print("I am the parent")
+
+
+class Child(Parent):
+    def c_print(self):
+        print("I am the child")
+
+
+c = Child()
+c.c_print()
+c.p_print()
+# Multi Level Inheritance
+
+class GrandParent:
+    def g_print(self):
+        print("I am the grand parent")
+
+
+class Parent(GrandParent):
+    def p_print(self):
+        print("I am the parent")
+
+
+class Child(Parent):
+    def c_print(self):
+        print("I am the child")
+
+
+c = Child()
+c.c_print()
+c.p_print()
+c.g_print()
